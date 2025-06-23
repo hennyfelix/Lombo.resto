@@ -14,7 +14,7 @@
             <a href="menu.php">Menu</a>
             <a href="apropos.php">Á propos</a>
             <a href="galerie.php">Galerie</a>
-            <a href="contact.php">Contact</a>
+            <a href="contact.php" class="active">Contact</a>
         </nav>
 
     </header>

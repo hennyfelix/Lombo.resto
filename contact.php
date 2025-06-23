@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LOMBO RESTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Lombo <span>Resto</span></div>
+        <nav>
+            <a href="index.php">Accueil</a>
+            <a href="menu.php">Menu</a>
+            <a href="apropos.php">Á propos</a>
+            <a href="galerie.php">Galerie</a>
+            <a href="contact.php">Contact</a>
+        </nav>
+
+    </header>
+    <div class="container">
+        <h1 class="titre-contact">Contactez-nous</h1>
+        <p class="intro-contact">Pour toute question, réservation ou collaboration, contactez-nous via les moyens suivants :</p>
+
+        <div class="contact-info">
+            <p><strong> Adresse :</strong> Quartier 4, kinshasa/n'djili, RDC</p>
+            <p><strong> Email :</strong> <a href="mailto:hennysangi22@gmail.com">hennysangi22@gmail.com</a></p>
+            <p><strong> WhatsApp :</strong> <a class="whatsapp-btn" href="https://wa.me/243995807293" target="_blank">+243 995 807 293</a></p>
+            <p><strong> Instagram :</strong> <a class="instagram-btn" href="https://www.instagram.com/la nuque en or" target="_blank">@la nuque en or</a></p>
+
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LOMBO RESTO - Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html

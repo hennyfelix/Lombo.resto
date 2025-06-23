@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Lombo Resto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="blur-background">
+        <header class="navbar">
+            <h1>À propos de <span class="highlight">Lombo Resto</span></h1>
+            <nav>
+                <a href="index.php">Accueil</a>
+                <a href="menu.php">Menu</a>
+                <a href="apropos.php" class="active">À propos</a>
+                <a href="galerie.php">Galerie</a>
+                <a href="contact.php">Contact</a>
+            </nav>
+
+        </header>
+
+        <section class="section">
+            <h2>À propos du nom <span class="highlight">Lombo</span></h2>
+            <p>
+                Le nom <em>Lombo</em> n'a pas été choisi au hasard. Il représente bien plus qu'un simple mot :
+                c'est le nom de mon village maternel. En tant que fils de la culture Kongo, où le matriarcat
+                est au coeur des traditions, j'ai voulu honorer mes racines en donnant ce nom à mon restaurant.
+                <br><br>
+                <em>Lombo</em>, c'est une manière de dire que ce lieu puise sa richesse dans l'héritage,
+                la transmission et le respect des valeurs ancestrales. Chaque plat, chaque accueil, chaque ambiance 
+                que vous vivez ici raconte un bout d'histoire, un hommage aux mères, aux familles, aux fêtes d'antan.
+            </p>
+
+        </section>
+
+        <section class="section">
+            <h2>À propos du fondateur</h2>
+            <p>
+                Je suis <strong>Henny Sangi</strong>, étudiant à l'université protestante au congo,
+                un peu passionné par la culture, la cuisine et les traditions africaines.
+                <br><br>
+                À travers ce projet, je souhaite offrir bien plus qu'un repas : une expérience, un retour aux sources,
+                une célébration de nos fêtes, de notre musique et de nos saveurs. <br>
+                Lombo Resto est né d'un rêve simple : celui de créer un lieu où l'on se sent chez soi, entouré de chaleur,
+                d'arômes familiers, de rires partagés et de souvenirs communs.
+                <br><br>
+                Ici, vous ne venez pas seulement manger. Vous venez vivre un moment, vous reconnecter avec la richesse
+                de nos origines. Bienvenue chez nous.
+            </p>
+
+        </section>
+
+        <div class="back-home">
+            <a href="index.php"> Retour à l'accueil</a>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

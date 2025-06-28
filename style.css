@@ -1,201 +1,433 @@
-*{
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background-image: url("images/dark-2562840_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    min-height: 100vh;
+    color: white;
+}
+/* Navbar */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffc107;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+/* Section intro */
+section.intro {
+    flex: 1;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+}
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f0db4f;
+}
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bouton " Voir notre menu */
+a.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ffc107;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+a.btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px #ffca28;
+}
+/* Footer */
+footer.footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+
+/* Partie contact Menu */
+/* Réanitialisation de base */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body.flou-fond{
-    background: url('images/table-5356682_1280 - Copie.jpg') no-repeat center center fixed;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("images/dark-2562840_1280.jpg");
     background-size: cover;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    min-height: 100vh;
     color: white;
 }
-.intro{
-    padding: 100px 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    max-width: 800px;
-    margin: auto;
-}
 
-.intro h2{
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    color: #ffd700;
-}
-.intro p{
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-.btn{
-    padding: 12px 25px;
-    background-color: #ffcc00;
-    color: #000;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-header{
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px 40px;
+/* Barre de navigarion */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
 }
 
-.logo{
-    font-size: 24px;
+.logo {
+    font-size: 26px;
+    color: #FFD700;
     font-weight: bold;
-    color: #ffcc00;
 }
-
-nav ul{
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav a:hover,
-nav a.active {
-    background-color: #ffcc00;
-    color: #000;
-}
-.blurred-section {
-    position: relative;
-    background-image: url('images/glasses-6800873_1280 - Copie.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    overflow: hidden;
-}
-
-.blurred-section::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-
-.blurred-section .content{
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-
-h1, h2, h3{
-    color: #ffcc00;
-    margin-bottom: 20px;
-}
-
-button{
-    background-color: #ffcc00;
-    color: #000;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-button:hover{
-    background-color: #e6b800;
-}
-
-form input, form textarea, form select{
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #ffcc00;
-    border-radius: 5px;
-    color: #fff;
-}
-
-form textarea{
-    resize: vertical;
-}
-
-/* Fond flouté */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.logo span {
     color: white;
-    position: relative;
-    min-height: 100vh;
 }
-.background {
-    background-image: url('img/fond.jpg'); /* image floutée */
-    background-size: cover;
-    background-position: center;
-    filter: blur(6px);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* pour que le fond soit derrière tout le contenu */
+.navbar nav a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-
-/* Conteneur principal */
-.menu-container {
-    padding: 30px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    max-width: 1200px;
-    margin: auto;
-    border-radius: 10px;
+.navbar nav a:hover,
+.navbar nav a.active {
+    background-color: #FFD700;
+    color: #000;
 }
-
-
-/* Titres */
-h1{
+/* Section du menu */
+.menu-section{
+    padding: 50px 20px;
     text-align: center;
-    color: gold;
+    color: white;
+}
+.menu-section h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    color: #FFD700;
 }
 
-/* Cartes de menu */
-.menu-items {
+/* Grille des plats et boissons */
+.menu-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
-.item{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+
+/* Chaque élément du menu */
+.menu-item {
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    width: 250px;
     padding: 15px;
-    margin: 10px;
-    width: 280px;
     text-align: center;
-    backdrop-filter: blur(3px);
 }
-.item img{
+/* Image du plat ou de la boisson */
+.menu-item img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
     border-radius: 8px;
 }
 
-.item h3{
-    color: #ffd700;
-    margin: 10px 0 5px;
+/* Nom du plat ou de la boisson */
+.menu-item h3 {
+    font-size: 20px;
+    color: #FFD700;
+    margin: 10px 0 5px 0;
 }
+
+/* Description du plat ou de la boisson */
+.menu-item p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Prix et bouton de commande */
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    background: #FFD700;
+    color: #222;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0; 
+}
+
+
+/* Boutons WhatsApp et Instagram */
+.menu-buttons a {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 3px;
+}
+.menu-buttons .whatsapp {
+    background-color: #25D366;
+}
+.menu-buttons .whatsapp:hover {
+    background-color: #1ebd5a;
+}
+.menu-buttons .instagram {
+    display: inline-block;
+    background-color: #E1306C;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 3px;
+
+}
+.menu-buttons .instagram:hover {
+    background-color: #e6683c;
+}
+/* Bouton Galerie */
+.contact-button {
+    margin-top: 50px;
+}
+
+.btn-contact {
+    background-color: #FFD700;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #fff176;
+}
+
+/* Page à propos */
+
+body {
+    font-family: 'Segoe UI',  sans-serif;
+    background-image: url("images/table-5356682_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    min-height: 100vh;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ffc107;
+    margin-bottom: 40px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #ffca28;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+.highlight {
+    color: #ffcc00;
+}
+
+/* Page Galerie */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("images/table-5356682_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    min-height: 100vh;
+    color: white;
+}
+
+.gallery-section {
+    padding: 60px 30px;
+    text-align: center;
+    color: white;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fdd835;
+}
+.gallery-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+.gallery-grid img {
+    width: 100%;
+    box-shadow  : 0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Bouton de contact */
+
+.contact-button {
+    margin-top: 40px;
+}
+
+.btn-contact {
+    background-color: #fdd835;
+    color: #222;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #e6683c;
+    color: #000;
+}
+
+/* Page Contact */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("images/table-5356682_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    min-height: 100vh;
+    color: white;
+}
+/* CONTENU */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.titre-contact {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+}
+.intro-contact {
+    font-size: 2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+.contact-info strong {
+    color: #f4c430;
+}
+
+/* Liens spécifiques */
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.whatsapp-btn {
+    color: #25D366;
+    font-weight: bold;
+}
+.instagram-btn {
+    color: #E1306C;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
 
